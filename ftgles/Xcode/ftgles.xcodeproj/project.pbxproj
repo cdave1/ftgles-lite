@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		63A6FE8C0FB1F7AF00C38E72 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
-		63B3975B1351AD4200E8F919 /* libFreetype2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B3975A1351AD4200E8F919 /* libFreetype2.a */; };
 		63B398B71351AE0E00E8F919 /* FTBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63B397941351AE0E00E8F919 /* FTBuffer.cpp */; };
 		63B398B81351AE0E00E8F919 /* FTCharmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 63B397951351AE0E00E8F919 /* FTCharmap.cpp */; };
 		63B398B91351AE0E00E8F919 /* FTCharmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 63B397961351AE0E00E8F919 /* FTCharmap.h */; };
@@ -125,9 +124,8 @@
 		2D500B990D5A79CF00DBA0E3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		63A6FE900FB1F7AF00C38E72 /* libFTGLES.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFTGLES.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AD97DC0FAA2A9F00A79D15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		63B3975A1351AD4200E8F919 /* libFreetype2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFreetype2.a; path = ../freetype2/libFreetype2.a; sourceTree = "<group>"; };
-		63B3975C1351ADF800E8F919 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; name = AUTHORS; path = ftgles/AUTHORS; sourceTree = "<group>"; };
-		63B3975D1351ADF800E8F919 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = config.h; path = ftgles/config.h; sourceTree = "<group>"; };
+		63B3975C1351ADF800E8F919 /* AUTHORS */ = {isa = PBXFileReference; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		63B3975D1351ADF800E8F919 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		63B397941351AE0E00E8F919 /* FTBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FTBuffer.cpp; sourceTree = "<group>"; };
 		63B397951351AE0E00E8F919 /* FTCharmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FTCharmap.cpp; sourceTree = "<group>"; };
 		63B397961351AE0E00E8F919 /* FTCharmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTCharmap.h; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				63A6FE8C0FB1F7AF00C38E72 /* Foundation.framework in Frameworks */,
-				63B3975B1351AD4200E8F919 /* libFreetype2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +261,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				E431F77F112E8CCC00E393A2 /* freetype2 */,
 				E431F77C112E8C1E00E393A2 /* ftgles */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -313,8 +309,7 @@
 				63B397EB1351AE0E00E8F919 /* FTVectoriser.h */,
 				63B397EC1351AE0E00E8F919 /* iGLU-1.0.0 */,
 			);
-			name = src;
-			path = ftgles/src;
+			path = src;
 			sourceTree = "<group>";
 		};
 		63B3979C1351AE0E00E8F919 /* FTFont */ = {
@@ -473,15 +468,7 @@
 				63B3975D1351ADF800E8F919 /* config.h */,
 			);
 			name = ftgles;
-			path = ../../ftgles;
-			sourceTree = "<group>";
-		};
-		E431F77F112E8CCC00E393A2 /* freetype2 */ = {
-			isa = PBXGroup;
-			children = (
-				63B3975A1351AD4200E8F919 /* libFreetype2.a */,
-			);
-			name = freetype2;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
